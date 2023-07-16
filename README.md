@@ -1,2 +1,3 @@
-# rythmicmambo
-Simple browser-info logger
+# RYTHMICMAMBO
+
+A simple browser-info logger

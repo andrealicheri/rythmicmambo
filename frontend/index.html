@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYTHMICMAMBO</title>
+    <script defer src="https://cdn.jsdelivr.net/gh/andrealicheri/web-stack@main/dist/min.js"></script>
+    <link href="/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul>
+            <li>
+                <strong>RYTHMICMAMBO</strong>
+            </li>
+        </ul>
+        <ul hx-boost="true">
+            <li>
+                <a hx-get="/components/home.html" hx-target="#mainBody">Home</a>
+                <a></a>
+                <a></a>
+                <a hx-get="/components/payload.html" hx-target="#mainBody">New Payload</a>
+                <a></a>
+                <a></a>
+                <a hx-get="/reports" hx-target="#mainBody">Reports</a>
+            </li>
+        </ul>
+    </nav>
+    <div style="text-align: center;" id="mainBody" class="container" hx-get="/components/home.html" hx-trigger="load"></div>
+</body>
+
+</html>

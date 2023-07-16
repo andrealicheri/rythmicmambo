@@ -1,0 +1,56 @@
+<h1>New Payload</h1>
+
+
+<div class="container payloadForm">
+    <form style="padding: 2rem;" hx-post="/backend/newPayload" hx-target="#response">
+        
+        <label>
+            Case Name
+            <input id="flag" name="name" type="text" required="true" placeholder="Enter case name here...">
+        </label>
+        <p>Payload settings:</p>
+        <label>
+            <input name="arch" type="checkbox" />
+            Get architecture
+        </label>
+        <label>
+            <input name="browser" type="checkbox" />
+            Get browser with feature queries
+        </label>
+        <label>
+            <input name="ipAddress" type="checkbox" />
+            Get IP Address
+        </label>
+        <label>
+            <input name="lang" type="checkbox" />
+            Get language
+        </label>
+        <label>
+            <input name="pdf" type="checkbox" />
+            Check if PDFs are supported
+        </label>
+        <label>
+            <input name="res" type="checkbox" />
+            Get the resolution
+        </label>
+        <label>
+            <input name="timezone" type="checkbox" />
+            Get the timezone
+        </label>
+        <label>
+            <input name="userAgent" type="checkbox" />
+            Get the User Agent
+        </label>
+        <p></p>
+        <p>Detection settings:</p>
+        <label>
+            <input name="obfuscate" type="checkbox" />
+            Obfuscate payload
+        </label>
+        <p></p>
+
+        <input type="submit" role="button" value="Submit">
+        <div id="response"></div>
+    </form>
+
+</div>

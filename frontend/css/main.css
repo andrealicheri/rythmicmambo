@@ -1,0 +1,15 @@
+.navigation {
+    background-color: #020d15;
+    padding: 1rem;
+}
+
+.image {
+    border-radius: 25px;
+    opacity: 0.4;
+}
+
+.payloadForm {
+    border-radius: 15px;
+    background-color: #031420;
+    text-align: left;
+}

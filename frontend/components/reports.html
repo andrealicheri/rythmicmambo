@@ -1,0 +1,8 @@
+<h1>Reports</h1>
+<div class="container payloadForm">
+  <ul style="padding: 2rem;">
+    {% for file in files %}
+    <li><a hx-get="{{ 'data/reports/' + file }}" hx-target="#mainBody">{{ file }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
