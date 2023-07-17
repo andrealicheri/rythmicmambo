@@ -19,9 +19,9 @@ args = parser.parse_args()
 if args.serve:
     os.chdir("backend/")
     subprocess.Popen(["python", "frontend.py"], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-    print("Frontend open on {}:{}".format(ipAddress, frontendPort))
+    print("Frontend open on port {}".format(frontendPort))
     subprocess.Popen(["python", "logger.py"], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-    print("Logger open on {}:{}".format(ipAddress, loggerPort))
+    print("Logger open on port {}".format(loggerPort))
     quit()
 
 if args.factory:
