@@ -60,7 +60,10 @@ def newPayload():
     with open("../" + page, "w") as f:
         f.write(payloadPage)
     with open ("templates/payloadResponse.html", "r") as f:
-        response = f.read().replace("NAMEVARIABLE", name).replace("DOMAINVARIABLE", ipAddress).replace("PORTVARIABLE", str(loggerPort))
+        loggerDoor = ":{}".format(str(loggerPort))
+        if isTunnel:
+            loggerDoor = ""
+        response = f.read().replace("NAMEVARIABLE", name).replace("DOMAINVARIABLE", ipAddress).replace("PORTVARIABLE", loggerDoor)
     
     
     return response
