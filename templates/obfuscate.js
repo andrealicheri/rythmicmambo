@@ -1,1 +1,0 @@
-// Placeholder file for the "Obfuscate file" checkbox. No real use whatsoever.
